@@ -83,7 +83,7 @@ header nav a.Active:after {
 
 figure {
   display: flex;
-  background-color: aquamarine;
+  background-color: darkslateblue;
 }
 
 figure img {
@@ -101,13 +101,30 @@ figure figcaption {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* justify-content: center; */
-  /* align-items: flex-start; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
   flex: 1;
 }
 
-article {
+main article {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+}
+
+main article.main-article {
+  grid-column: 1 / 4;
+  padding: 80px 25px;
+}
+
+main article .article-content {
+  padding: 10px;
+  background-color: rgba(250, 250, 250, 0.3);
+  border-radius: 5px;
+}
+
+h3,
+p {
   color: white;
 }
 

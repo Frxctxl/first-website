@@ -24,6 +24,10 @@ a {
   color: #FFF;
 }
 
+img {
+  max-width: 100%;
+}
+
 header {
   background-color: #694C99;
   display: flex;
@@ -77,39 +81,34 @@ header nav a.Active:after {
   opacity: 1;
 }
 
-main {
+figure {
   display: flex;
+  background-color: aquamarine;
+}
+
+figure img {
+  width: 50%;
+}
+
+figure figcaption {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   /* justify-content: center; */
   /* align-items: flex-start; */
   flex: 1;
 }
 
-section {
-  flex: 1;
-  background-color: #ddfbd2;
-}
-
-section div:nth-child(even) {
-  background-color: lightgreen;
-}
-
-section div:nth-child(odd) {
-  background-color: lightskyblue;
-}
-
-section.right-section {
-  flex: 2;
-  background-color: #bcedf6;
-}
-
-/* section.right-section .section-header { */
-/*   font-weight: 300; */
-/* } */
-
-.section-header {
-  color: var(--primary-color);
-  font-size: 30px;
-  text-align: center;
+article {
+  color: white;
 }
 
 footer {
